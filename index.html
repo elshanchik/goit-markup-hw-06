@@ -29,7 +29,9 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-text link" href="./index.html">Studio</a>
+              <a class="header-text link emphasis" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-text link" href="./portfolio.html">Portfolio</a>
@@ -560,6 +562,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label for="">
+            <span class="footer-label-text">Subscribe</span>
+            <input
+              type="text"
+              name="user-email"
+              class="footer-modal-input"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -569,6 +583,64 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label>
+            <span class="label-wrap">Name</span>
+            <div class="input-container">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Ім'я*"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <span class="label-wrap">Phone</span>
+            <div class="input-container">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder="Телефон*"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <span class="label-wrap">Email</span>
+            <div class="input-container">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder="Пошта*"
+                required
+              />
+              <svg class="modal-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <div class="comment-container">
+            <label for="user-text" class="label-comments">Comments</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

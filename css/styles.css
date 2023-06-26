@@ -802,6 +802,9 @@ ol {
 
 }
 
+input:focus + label > span {
+    fill: #4D5AE5;
+}
 
 input:checked + label > span {
     background-color: #404bbf;

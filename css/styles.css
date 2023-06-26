@@ -720,6 +720,7 @@ ol {
 
 
 .modal-icon {
+    fill: #2E2F42;
     position: absolute;
     left: 16px;
     top: 50%;
@@ -727,7 +728,8 @@ ol {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover {
+.modal-icon:hover,
+.modal-icon:focus {
     fill: #4D5AE5;
 }
 
@@ -800,7 +802,11 @@ ol {
 
 }
 
-input:checked + label > span {
+.checkbox-icon {
+    
+}
+
+.checkbox:checked + .checkbox-label > span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -832,6 +838,8 @@ input:checked + label > span {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+
 
 /* PORTFOLIO */
 

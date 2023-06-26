@@ -802,11 +802,8 @@ ol {
 
 }
 
-.checkbox-icon {
-    
-}
 
-.checkbox:checked + .checkbox-label > span {
+input:checked + label > span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;

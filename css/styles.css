@@ -115,9 +115,6 @@ ol {
     color: var(--about-color);
 }
 
-.header-list {
-
-}
 
 .header-text:hover::after {
     content: "";
